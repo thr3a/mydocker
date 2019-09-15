@@ -1,0 +1,10 @@
+jupyterlab
+tensorflow-gpu==1.13.*
+Keras==2.2.*
+Pillow==6.0.0
+opencv-python
+matplotlib
+scikit-learn
+pipenv
+pandas
+mecab-python3
