@@ -5,7 +5,7 @@ services:
     image: nginx:alpine
     restart: always
     ports:
-      - "13000:80"
+      # - "13000:80"
       - "13000:443"
     # volumes:
     #   - ./docker/nginx/server.conf:/etc/nginx/conf.d/servers.conf
@@ -33,5 +33,7 @@ services:
     build: ./docker/python
     image: "my/python:latest"
     stdin_open: true
+    ports:
+      - '18888:8888'
     volumes:
-      - ./workspace:/app
+      - ./workspace:/workspace
