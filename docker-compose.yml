@@ -23,6 +23,7 @@ services:
     ports:
       - 3306:3306
     volumes:
+      - "./docker/mysql/server.conf:/etc/mysql/conf.d/my.cnf"
       - "./store/mysql:/var/lib/mysql"
   redis:
     restart: always
