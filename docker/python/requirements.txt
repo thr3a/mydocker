@@ -8,3 +8,5 @@ scikit-learn
 pipenv
 pandas
 mecab-python3
+Flask
+sympy
