@@ -27,14 +27,14 @@ services:
       - "./store/mysql:/var/lib/mysql"
   redis:
     restart: always
-    image: redis:3.2-alpine
+    image: redis:4-alpine
     ports:
       - '6379:6379'
-  python:
-    build: ./docker/python
-    image: "my/python:latest"
-    stdin_open: true
-    ports:
-      - '18888:8888'
-    volumes:
-      - ./workspace:/workspace
+  # python:
+  #   build: ./docker/python
+  #   image: "my/python:latest"
+  #   stdin_open: true
+  #   ports:
+  #     - '18888:8888'
+  #   volumes:
+  #     - ./workspace:/workspace
