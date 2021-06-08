@@ -1,7 +1,7 @@
 jupyterlab
 tensorflow-gpu==1.13.*
 Keras==2.2.*
-Pillow==6.0.0
+Pillow==8.2.0
 opencv-python
 matplotlib
 scikit-learn
